@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+<body>
+<div class="payment-box">
+  <div class="title"><h4>Choose payment method below</h4></div>
+  <div class="tab">
+  <button class="tablinks btn-clicked" onclick="return openCreditCardContent()">
+          <span><i class="fa-solid fa-credit-card"></i></span><br><p>Credit Card</p></button>
+  <button class="tablinks" onclick="return openDebitCardContent()">
+          <span><i class="fa-regular fa-credit-card"></i></span><br><p>Debit Card</p></button>
+  <button class="tablinks" onclick="return openNetBankingContent()">
+          <span><i class="fa-solid fa-money-check"></i></span><br><p>Net Banking</p></button>
+  <button class="tablinks" onclick="return openCODContent()">
+          <span><i class="fa-solid fa-money-bill-wave"></i></span><br><p>Cash On Delivery</p></button>
+</div>
+  <form id="form" action="#" autocomplete="off" method="post" onsubmit="return validate()">
+  <div class="payment-info credit-card">
+      <div class="billing">
+          <div class="title-flex">
+              <div class="num">1</div>
+              <h4>Billing Info</h4>
+          </div>
+          <div class="field full">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="Full Name" onkeyup="validateName()">
+              <p id="name_error"></p>
+          </div>
+          <div class="field full">
+              <label for="address">Billing Address</label>
+              <input id="address" type="text" placeholder="Billing Address" onkeyup="validateAddress()">
+              <p id="address_error"></p>
+          </div>
+          <div class="field full">
+              <label for="phone">Phone</label>
+              <input id="phone" type="text" placeholder="Phone" onkeyup="validatePhone()">
+              <p id="mobile_error"></p>
+          </div>
+          <div class="half-field">
+              <div class="field half">
+                  <label for="city">City</label>
+                  <input id="city" type="text" placeholder="City" onkeyup="validateCity()">
+                  <p id="city_error"></p>
+              </div>
+              <div class="field half">
+                  <label for="state">State</label>
+                  <input id="state" type="text" placeholder="State" onkeyup="validateState()">
+                  <p id="state_error"></p>
+              </div>
+          </div>
+         
+      </div>
+      <div class="shipping">
+          <div class="title-flex">
+              <div class="num">2</div>
+              <h4>Credit Card Info</h4>
+          </div>
+          <div class="field full">
+              <label for="cardName">Card holder Name</label>
+              <input id="cardName" type="text" placeholder="Full Name" onkeyup="validateCardName()">
+          </div>
+          <div class="field full">
+              <label for="cardNumber">Card Number</label>
+              <input id="cardNumber" type="text" placeholder="1234-5678-9012-3456" onkeyup="validateCardNumber()">
+          </div>
+          <div class="field full">
+              <label for="cvv">CCV Number</label>
+              <input id="cvv" type="text" placeholder="468" onkeyup="validateCvv()">
+          </div>
+          <div class="half-field">
+              <div class="field half">
+                  <label for="month">Exp. Month</label>
+                  <input id="month" type="text" placeholder="12" onkeyup="validateMonth()">
+              </div>
+              <div class="field half">
+                  <label for="year">Exp. Year</label>
+                  <input id="year" type="text" placeholder="19" onkeyup="validateYear()">
+              </div>
+          </div>
+      </div>
+      </div>
+  <div class="card-actions">
+      <div class="flex-start">
+          <button class="button-1" routerLink="/products">Return to Store</button>
+      </div>
+      <div class="flex-end">
+          <button type="submit" class="button-2" (click)="checkout()" id="submit" >Pay <span id="pay-amount" ></span></button>
+      </div>
+  </div>
+ 
+
+</form>
+</div>
+</body>
+<app-footer></app-footer>

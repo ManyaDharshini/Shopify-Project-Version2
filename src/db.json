@@ -1,0 +1,368 @@
+{
+  "registeredUsers": [
+    {
+      "username": "Manya",
+      "emailId": "manya@gmail.com",
+      "mobile": "7010502112",
+      "password": "Manya@123",
+      "confirmPassword": "Manya@123",
+      "id": 1
+    },
+    {
+      "username": "Mesha",
+      "emailId": "mesha@gmail.com",
+      "mobile": "9237489237",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 2
+    },
+    {
+      "username": "Riyashini",
+      "emailId": "riya@gmail.com",
+      "mobile": "9478463747",
+      "password": "riya@123",
+      "confirmPassword": "riya@123",
+      "id": 3
+    },
+    {
+      "username": "Manya Dharshini S",
+      "emailId": "manyadharshiniii@gmail.com",
+      "mobile": "9442841767",
+      "password": "890890",
+      "confirmPassword": "890890",
+      "id": 4
+    },
+    {
+      "username": "Ajai",
+      "emailId": "ajai26@gmail.com",
+      "mobile": "9360348601",
+      "password": "ajai123",
+      "confirmPassword": "ajai123",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "Dell",
+      "image": "../assets/lap images/Dell inspiron 3511.jpg",
+      "model": "Dell inspiron 15 3511",
+      "price": "53,000",
+      "originalPrice": "60,000"
+    },
+    {
+      "id": 2,
+      "category": "HP",
+      "image": "../assets/lap images/hp laptop 14s.jpg",
+      "model": "HP Laptop 14s-dq500",
+      "price": "62,000",
+      "originalPrice": "65,000"
+    },
+    {
+      "id": 3,
+      "category": "Asus",
+      "image": "../assets/lap images/asus zen1.jpg",
+      "model": "Asus VivoBook ultra k14",
+      "price": "59,000",
+      "originalPrice": "63,000"
+    },
+    {
+      "id": 4,
+      "category": "Lenovo",
+      "image": "../assets/lap images/lenovo ideapad flex.jpg",
+      "model": "Lenovo IdeaPad Flex 5i",
+      "price": "67,000",
+      "originalPrice": "72,499"
+    },
+    {
+      "id": 5,
+      "category": "HP",
+      "image": "../assets/lap images/hp pavilion15.jpg",
+      "model": "HP Pavillion Laptop 15",
+      "price": "65,599",
+      "originalPrice": "69,000"
+    },
+    {
+      "id": 6,
+      "category": "Dell",
+      "image": "../assets/lap images/dell inspiron 15.jpg",
+      "model": "Dell Inspiron 15",
+      "price": "63,599",
+      "originalPrice": "67,399"
+    },
+    {
+      "id": 7,
+      "category": "Acer",
+      "image": "../assets/lap images/Acer 22.jpg",
+      "model": "Acer 22",
+      "price": "43,599",
+      "originalPrice": "51,000"
+    },
+    {
+      "id": 8,
+      "category": "Macbook",
+      "image": "../assets/lap images/Macbook pro 22.jpg",
+      "model": "Macbook pro 22",
+      "price": "2,45,599",
+      "originalPrice": "2,50,000"
+    },
+    {
+      "id": 9,
+      "category": "Lenovo",
+      "image": "../assets/lap images/lenovo am2647.jpg",
+      "model": "Lenovo AM 2647",
+      "price": "1,05,000",
+      "originalPrice": "1,11,000"
+    },
+    {
+      "id": 10,
+      "category": "Acer",
+      "image": "../assets/lap images/Acer pro 2647.jpg",
+      "model": "Acer pro 2647",
+      "price": "42,000",
+      "originalPrice": "47,000"
+    },
+    {
+      "id": 11,
+      "category": "Asus",
+      "image": "../assets/lap images/Asus Hero 1.jpg",
+      "model": "Asus Hero 1",
+      "price": "77,499",
+      "originalPrice": "80,000"
+    },
+    {
+      "id": 12,
+      "category": "HP",
+      "image": "../assets/lap images/HP ZenZ.jpg",
+      "model": "HP ZenZ",
+      "price": "80,499",
+      "originalPrice": "85,299"
+    },
+    {
+      "id": 13,
+      "category": "Macbook",
+      "image": "../assets/lap images/macbook 1Z.jpg",
+      "model": "Macbook 1Z",
+      "price": "98,599",
+      "originalPrice": "1,10,000"
+    },
+    {
+      "id": 14,
+      "category": "Dell",
+      "image": "../assets/lap images/Dell sonic.jpg",
+      "model": "Dell sonic 1",
+      "price": "92,499",
+      "originalPrice": "99,999"
+    },
+    {
+      "id": 15,
+      "category": "Lenovo",
+      "image": "../assets/lap images/Lenovo King1.jpg",
+      "model": "Lenovo King 1",
+      "price": "86,799",
+      "originalPrice": "89,999"
+    },
+    {
+      "id": 16,
+      "category": "HP",
+      "image": "../assets/lap images/hp pavilion 2.jpg",
+      "model": "HP Pavilion 2",
+      "price": "42,000",
+      "originalPrice": "48,999"
+    },
+    {
+      "id": 17,
+      "category": "Asus",
+      "image": "../assets/lap images/asus phoneix.jpg",
+      "model": "Asus Phoneix",
+      "price": "88,000",
+      "originalPrice": "93,000"
+    },
+    {
+      "id": 18,
+      "category": "Dell",
+      "image": "../assets/lap images/dell bee26.jpg",
+      "model": "Dell Bee 26",
+      "price": "43,599",
+      "originalPrice": "49,299"
+    },
+    {
+      "id": 19,
+      "category": "Acer",
+      "image": "../assets/lap images/acer max.jpg",
+      "model": "Acer Max",
+      "price": "77,000",
+      "originalPrice": "81,000"
+    },
+    {
+      "id": 20,
+      "category": "Lenovo",
+      "image": "../assets/lap images/lenovo 10.jpg",
+      "model": "Lenovo 10",
+      "price": "87,000",
+      "originalPrice": "93,999"
+    },
+    {
+      "id": 21,
+      "category": "Asus",
+      "image": "../assets/lap images/asus zen1.jpg",
+      "model": "Asus Zen 1",
+      "price": "92,499",
+      "originalPrice": "99,000"
+    },
+    {
+      "id": 22,
+      "category": "Macbook",
+      "image": "../assets/lap images/macbook air.jpg",
+      "model": "Macbook Air",
+      "price": "1,02,499",
+      "originalPrice": "1,10,000"
+    },
+    {
+      "id": 23,
+      "category": "HP",
+      "image": "../assets/lap images/hp think3.jpg",
+      "model": "HP Think 3",
+      "price": "58,000",
+      "originalPrice": "65,000"
+    },
+    {
+      "id": 24,
+      "category": "Lenovo",
+      "image": "../assets/lap images/lenovo 10i.jpg",
+      "model": "Lenovo 10i",
+      "price": "1,07,000",
+      "originalPrice": "1,15,000"
+    },
+    {
+      "id": 25,
+      "category": "Macbook",
+      "image": "../assets/lap images/macbook air pro.jpg",
+      "model": "Macbook Air Pro",
+      "price": "1,28,499",
+      "originalPrice": "1,32,999"
+    },
+    {
+      "id": 26,
+      "category": "Dell",
+      "image": "../assets/lap images/dell zion2.jpg",
+      "model": "Dell Zion 2",
+      "price": "56,599",
+      "originalPrice": "65,000"
+    },
+    {
+      "id": 27,
+      "category": "Acer",
+      "image": "../assets/lap images/acer legion.jpg",
+      "model": "Acer Legion",
+      "price": "1,10,000",
+      "originalPrice": "1,16,000"
+    },
+    {
+      "id": 28,
+      "category": "Asus",
+      "image": "../assets/lap images/asus g1.jpg",
+      "model": "Asus G1",
+      "price": "38,499",
+      "originalPrice": "45,000"
+    },
+    {
+      "id": 29,
+      "category": "Lenovo",
+      "image": "../assets/lap images/lenovo gforce.jpg",
+      "model": "Lenovo GForce",
+      "price": "75,000",
+      "originalPrice": "83,000"
+    },
+    {
+      "id": 30,
+      "category": "Macbook",
+      "image": "../assets/lap images/macbook pro 3.jpg",
+      "model": "Macbook Pro 3",
+      "price": "1,02,599",
+      "originalPrice": "1.10,000"
+    }
+  ],
+  "cart": [
+    {
+      "productId": 5,
+      "image": "../assets/lap images/hp pavilion15.jpg",
+      "name": "HP Pavillion Laptop 15",
+      "price": "65,599",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "productId": 1,
+      "userId": "4",
+      "image": "../assets/lap images/Dell inspiron 3511.jpg",
+      "name": "Dell inspiron 15 3511",
+      "price": "53,000",
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "productId": 2,
+      "userId": "4",
+      "image": "../assets/lap images/hp laptop 14s.jpg",
+      "name": "HP Laptop 14s-dq500",
+      "price": "62,000",
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "productId": 3,
+      "userId": "4",
+      "image": "../assets/lap images/asus zen1.jpg",
+      "name": "Asus VivoBook ultra k14",
+      "price": "59,000",
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "productId": 2,
+      "userId": null,
+      "image": "../assets/lap images/hp laptop 14s.jpg",
+      "name": "HP Laptop 14s-dq500",
+      "price": "62,000",
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "productId": 2,
+      "userId": "1",
+      "image": "../assets/lap images/hp laptop 14s.jpg",
+      "name": "HP Laptop 14s-dq500",
+      "price": "62,000",
+      "quantity": 3,
+      "id": 13
+    },
+    {
+      "productId": 3,
+      "userId": "1",
+      "image": "../assets/lap images/asus zen1.jpg",
+      "name": "Asus VivoBook ultra k14",
+      "price": "59,000",
+      "quantity": 1,
+      "id": 14
+    },
+    {
+      "productId": 6,
+      "userId": "1",
+      "image": "../assets/lap images/dell inspiron 15.jpg",
+      "name": "Dell Inspiron 15",
+      "price": "63,599",
+      "quantity": 1,
+      "id": 15
+    },
+    {
+      "productId": 9,
+      "userId": "1",
+      "image": "../assets/lap images/lenovo am2647.jpg",
+      "name": "Lenovo AM 2647",
+      "price": "1,05,000",
+      "quantity": 1,
+      "id": 16
+    }
+  ]
+}
