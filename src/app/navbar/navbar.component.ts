@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit():void {
- 
+    this.cartService.getCartItems().subscribe(cartItems => this.cartCount = cartItems.length);
   }
 
   onLogout():void{

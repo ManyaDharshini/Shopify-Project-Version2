@@ -285,66 +285,13 @@
   ],
   "cart": [
     {
-      "productId": 5,
-      "image": "../assets/lap images/hp pavilion15.jpg",
-      "name": "HP Pavillion Laptop 15",
-      "price": "65,599",
-      "quantity": 1,
-      "id": 3
-    },
-    {
-      "productId": 1,
-      "userId": "4",
-      "image": "../assets/lap images/Dell inspiron 3511.jpg",
-      "name": "Dell inspiron 15 3511",
-      "price": "53,000",
-      "quantity": 1,
-      "id": 9
-    },
-    {
-      "productId": 2,
-      "userId": "4",
-      "image": "../assets/lap images/hp laptop 14s.jpg",
-      "name": "HP Laptop 14s-dq500",
-      "price": "62,000",
-      "quantity": 1,
-      "id": 10
-    },
-    {
-      "productId": 3,
-      "userId": "4",
-      "image": "../assets/lap images/asus zen1.jpg",
-      "name": "Asus VivoBook ultra k14",
-      "price": "59,000",
-      "quantity": 1,
-      "id": 11
-    },
-    {
-      "productId": 2,
-      "userId": null,
-      "image": "../assets/lap images/hp laptop 14s.jpg",
-      "name": "HP Laptop 14s-dq500",
-      "price": "62,000",
-      "quantity": 1,
-      "id": 12
-    },
-    {
       "productId": 2,
       "userId": "1",
       "image": "../assets/lap images/hp laptop 14s.jpg",
       "name": "HP Laptop 14s-dq500",
       "price": "62,000",
-      "quantity": 3,
-      "id": 13
-    },
-    {
-      "productId": 3,
-      "userId": "1",
-      "image": "../assets/lap images/asus zen1.jpg",
-      "name": "Asus VivoBook ultra k14",
-      "price": "59,000",
       "quantity": 1,
-      "id": 14
+      "id": 1
     },
     {
       "productId": 6,
@@ -353,16 +300,16 @@
       "name": "Dell Inspiron 15",
       "price": "63,599",
       "quantity": 1,
-      "id": 15
+      "id": 4
     },
     {
-      "productId": 9,
+      "productId": 4,
       "userId": "1",
-      "image": "../assets/lap images/lenovo am2647.jpg",
-      "name": "Lenovo AM 2647",
-      "price": "1,05,000",
+      "image": "../assets/lap images/lenovo ideapad flex.jpg",
+      "name": "Lenovo IdeaPad Flex 5i",
+      "price": "67,000",
       "quantity": 1,
-      "id": 16
+      "id": 5
     }
   ]
 }

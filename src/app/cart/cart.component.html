@@ -1,6 +1,11 @@
 <app-navbar></app-navbar>
 <section *ngIf="cartItems.length > 0" id="cart" class="shopping-cart">
-  <h3>My cart</h3>
+  <div class="flex-heading">
+    <div class="my-cart"><h3>My cart</h3></div>
+    <div (click)="clearCart()" class="clear-cart"><h3>Clear cart</h3></div>
+
+  </div>
+ 
     <table width="100%">
         <thead>
             <tr>

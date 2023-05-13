@@ -33,7 +33,14 @@ export class CartService {
     const deleteUrl = `${this.url}/${id}`;
     return this.http.delete<any>(deleteUrl);
   }
-
+  clearCart(id: number): Observable<any>  {
+    const currentUserId =this.authUser.setUserId();
+    // console.log("cart user id"+currentUserId);
+    const apiUrl = `${this.baseUrl}/cart?userId=${currentUserId}/${id}`;
+    console.log("cart cleared");
+    const deleteUrl = `${this.url}/${id}`;
+    return this.http.delete<any>(deleteUrl);
+  }
   // getCartCount(count:number){
   //    this.cartCount=count;
   //    //console.log(this.cartCount);

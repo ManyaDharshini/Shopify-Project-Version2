@@ -13,6 +13,8 @@ export class CartComponent {
   cartItems: any[] = [];
   totalPrice:number = 0;
   cartCount:number = 0;
+  currentUserId =this.authUser.setUserId();
+  userId =  parseInt(this.currentUserId, 10);
   constructor(private cartService: CartService, public authUser: AuthUserService) {
     setInterval(()=>{
           this.getCartTotal();
@@ -68,6 +70,19 @@ export class CartComponent {
       this.totalPrice = this.cartItems.reduce((acc,item)=> acc + parseFloat(item.price.replaceAll(',','')) * parseInt(item.quantity),0);
       //console.log(this.totalPrice);
     });
+  }
+
+  clearCart() {
+    this.cartService.getCartItems().subscribe(items => {
+      this.cartItems = items;
+      this.cartItems.forEach((item: any) => {
+        this.cartService.clearCart(item.id).subscribe(()=>{
+          this.cartItems = [];
+        });
+      })
+
+    });
+ 
   }
 
 
