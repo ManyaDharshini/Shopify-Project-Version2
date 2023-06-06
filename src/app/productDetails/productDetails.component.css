@@ -101,10 +101,11 @@ transition: all 0.5s ease;
   margin-top: 6px;
   margin-bottom: 10px;
   align-items: center;
+  color:gray;
 }
 
-.product-rating span:not(:last-child){
-  color: #ffc600;
+.checked {
+  color: gold;
 }
 .product-rating .review{
   color: gray;

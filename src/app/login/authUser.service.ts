@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 export class AuthUserService {
 
 isLoggedIn = false;
+isAdminLoggedIn = false;
+loggedInUser:any;
 userId='user_id';
 constructor() {
   this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
@@ -28,11 +30,14 @@ onLogin():void {
 }
 
 onlogout():void {
-   window.location.reload();
+  const confirmation = window.confirm("Are you sure you want to logout?");
+  if(confirmation){
   this.isLoggedIn = false;
   localStorage.setItem('isLoggedIn','false');
   localStorage.removeItem(this.userId);
+  }
 }
+
 
 getIsLoggedIn():boolean{
   return this.isLoggedIn;

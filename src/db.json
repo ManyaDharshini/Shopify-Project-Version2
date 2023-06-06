@@ -1,4 +1,12 @@
 {
+  "admin": [
+    {
+      "username": "Admin",
+      "emailId": "admin@gmail.com",
+      "password": "Admin@123",
+      "id": 1
+    }
+  ],
   "registeredUsers": [
     {
       "username": "Manya",
@@ -25,19 +33,19 @@
       "id": 3
     },
     {
-      "username": "Manya Dharshini S",
-      "emailId": "manyadharshiniii@gmail.com",
+      "username": "Megallan",
+      "emailId": "megallan@gmail.com",
       "mobile": "9442841767",
-      "password": "890890",
-      "confirmPassword": "890890",
+      "password": "megallan@123",
+      "confirmPassword": "megallan@123",
       "id": 4
     },
     {
-      "username": "Ajai",
-      "emailId": "ajai26@gmail.com",
-      "mobile": "9360348601",
-      "password": "ajai123",
-      "confirmPassword": "ajai123",
+      "username": "Mac Millon",
+      "emailId": "macmillon@gmail.com",
+      "mobile": "9443604051",
+      "password": "macmillon@123",
+      "confirmPassword": "macmillon@123",
       "id": 5
     }
   ],
@@ -48,7 +56,8 @@
       "image": "../assets/lap images/Dell inspiron 3511.jpg",
       "model": "Dell inspiron 15 3511",
       "price": "53,000",
-      "originalPrice": "60,000"
+      "originalPrice": "60,000",
+      "ratings": 5
     },
     {
       "id": 2,
@@ -56,7 +65,8 @@
       "image": "../assets/lap images/hp laptop 14s.jpg",
       "model": "HP Laptop 14s-dq500",
       "price": "62,000",
-      "originalPrice": "65,000"
+      "originalPrice": "65,000",
+      "ratings": 4.5
     },
     {
       "id": 3,
@@ -64,7 +74,8 @@
       "image": "../assets/lap images/asus zen1.jpg",
       "model": "Asus VivoBook ultra k14",
       "price": "59,000",
-      "originalPrice": "63,000"
+      "originalPrice": "63,000",
+      "ratings": 4
     },
     {
       "id": 4,
@@ -72,7 +83,8 @@
       "image": "../assets/lap images/lenovo ideapad flex.jpg",
       "model": "Lenovo IdeaPad Flex 5i",
       "price": "67,000",
-      "originalPrice": "72,499"
+      "originalPrice": "72,499",
+      "ratings": 4
     },
     {
       "id": 5,
@@ -80,7 +92,8 @@
       "image": "../assets/lap images/hp pavilion15.jpg",
       "model": "HP Pavillion Laptop 15",
       "price": "65,599",
-      "originalPrice": "69,000"
+      "originalPrice": "69,000",
+      "ratings": 3
     },
     {
       "id": 6,
@@ -88,7 +101,8 @@
       "image": "../assets/lap images/dell inspiron 15.jpg",
       "model": "Dell Inspiron 15",
       "price": "63,599",
-      "originalPrice": "67,399"
+      "originalPrice": "67,399",
+      "ratings": 4
     },
     {
       "id": 7,
@@ -96,7 +110,8 @@
       "image": "../assets/lap images/Acer 22.jpg",
       "model": "Acer 22",
       "price": "43,599",
-      "originalPrice": "51,000"
+      "originalPrice": "51,000",
+      "ratings": 3
     },
     {
       "id": 8,
@@ -104,7 +119,8 @@
       "image": "../assets/lap images/Macbook pro 22.jpg",
       "model": "Macbook pro 22",
       "price": "2,45,599",
-      "originalPrice": "2,50,000"
+      "originalPrice": "2,50,000",
+      "ratings": 5
     },
     {
       "id": 9,
@@ -112,7 +128,8 @@
       "image": "../assets/lap images/lenovo am2647.jpg",
       "model": "Lenovo AM 2647",
       "price": "1,05,000",
-      "originalPrice": "1,11,000"
+      "originalPrice": "1,11,000",
+      "ratings": 4
     },
     {
       "id": 10,
@@ -120,7 +137,8 @@
       "image": "../assets/lap images/Acer pro 2647.jpg",
       "model": "Acer pro 2647",
       "price": "42,000",
-      "originalPrice": "47,000"
+      "originalPrice": "47,000",
+      "ratings": 5
     },
     {
       "id": 11,
@@ -128,7 +146,8 @@
       "image": "../assets/lap images/Asus Hero 1.jpg",
       "model": "Asus Hero 1",
       "price": "77,499",
-      "originalPrice": "80,000"
+      "originalPrice": "80,000",
+      "ratings": 5
     },
     {
       "id": 12,
@@ -136,7 +155,8 @@
       "image": "../assets/lap images/HP ZenZ.jpg",
       "model": "HP ZenZ",
       "price": "80,499",
-      "originalPrice": "85,299"
+      "originalPrice": "85,299",
+      "ratings": 4
     },
     {
       "id": 13,
@@ -144,7 +164,8 @@
       "image": "../assets/lap images/macbook 1Z.jpg",
       "model": "Macbook 1Z",
       "price": "98,599",
-      "originalPrice": "1,10,000"
+      "originalPrice": "1,10,000",
+      "ratings": 5
     },
     {
       "id": 14,
@@ -152,7 +173,8 @@
       "image": "../assets/lap images/Dell sonic.jpg",
       "model": "Dell sonic 1",
       "price": "92,499",
-      "originalPrice": "99,999"
+      "originalPrice": "99,999",
+      "ratings": 4
     },
     {
       "id": 15,
@@ -160,7 +182,8 @@
       "image": "../assets/lap images/Lenovo King1.jpg",
       "model": "Lenovo King 1",
       "price": "86,799",
-      "originalPrice": "89,999"
+      "originalPrice": "89,999",
+      "ratings": 3
     },
     {
       "id": 16,
@@ -168,7 +191,8 @@
       "image": "../assets/lap images/hp pavilion 2.jpg",
       "model": "HP Pavilion 2",
       "price": "42,000",
-      "originalPrice": "48,999"
+      "originalPrice": "48,999",
+      "ratings": 3
     },
     {
       "id": 17,
@@ -176,7 +200,8 @@
       "image": "../assets/lap images/asus phoneix.jpg",
       "model": "Asus Phoneix",
       "price": "88,000",
-      "originalPrice": "93,000"
+      "originalPrice": "93,000",
+      "ratings": 5
     },
     {
       "id": 18,
@@ -184,7 +209,8 @@
       "image": "../assets/lap images/dell bee26.jpg",
       "model": "Dell Bee 26",
       "price": "43,599",
-      "originalPrice": "49,299"
+      "originalPrice": "49,299",
+      "ratings": 4
     },
     {
       "id": 19,
@@ -192,7 +218,8 @@
       "image": "../assets/lap images/acer max.jpg",
       "model": "Acer Max",
       "price": "77,000",
-      "originalPrice": "81,000"
+      "originalPrice": "81,000",
+      "ratings": 4
     },
     {
       "id": 20,
@@ -200,7 +227,8 @@
       "image": "../assets/lap images/lenovo 10.jpg",
       "model": "Lenovo 10",
       "price": "87,000",
-      "originalPrice": "93,999"
+      "originalPrice": "93,999",
+      "ratings": 3
     },
     {
       "id": 21,
@@ -208,7 +236,8 @@
       "image": "../assets/lap images/asus zen1.jpg",
       "model": "Asus Zen 1",
       "price": "92,499",
-      "originalPrice": "99,000"
+      "originalPrice": "99,000",
+      "ratings": 5
     },
     {
       "id": 22,
@@ -216,7 +245,8 @@
       "image": "../assets/lap images/macbook air.jpg",
       "model": "Macbook Air",
       "price": "1,02,499",
-      "originalPrice": "1,10,000"
+      "originalPrice": "1,10,000",
+      "ratings": 3
     },
     {
       "id": 23,
@@ -224,7 +254,8 @@
       "image": "../assets/lap images/hp think3.jpg",
       "model": "HP Think 3",
       "price": "58,000",
-      "originalPrice": "65,000"
+      "originalPrice": "65,000",
+      "ratings": 3
     },
     {
       "id": 24,
@@ -232,7 +263,8 @@
       "image": "../assets/lap images/lenovo 10i.jpg",
       "model": "Lenovo 10i",
       "price": "1,07,000",
-      "originalPrice": "1,15,000"
+      "originalPrice": "1,15,000",
+      "ratings": 4
     },
     {
       "id": 25,
@@ -240,7 +272,8 @@
       "image": "../assets/lap images/macbook air pro.jpg",
       "model": "Macbook Air Pro",
       "price": "1,28,499",
-      "originalPrice": "1,32,999"
+      "originalPrice": "1,32,999",
+      "ratings": 5
     },
     {
       "id": 26,
@@ -248,7 +281,8 @@
       "image": "../assets/lap images/dell zion2.jpg",
       "model": "Dell Zion 2",
       "price": "56,599",
-      "originalPrice": "65,000"
+      "originalPrice": "65,000",
+      "ratings": 3
     },
     {
       "id": 27,
@@ -256,7 +290,8 @@
       "image": "../assets/lap images/acer legion.jpg",
       "model": "Acer Legion",
       "price": "1,10,000",
-      "originalPrice": "1,16,000"
+      "originalPrice": "1,16,000",
+      "ratings": 5
     },
     {
       "id": 28,
@@ -264,7 +299,8 @@
       "image": "../assets/lap images/asus g1.jpg",
       "model": "Asus G1",
       "price": "38,499",
-      "originalPrice": "45,000"
+      "originalPrice": "45,000",
+      "ratings": 3
     },
     {
       "id": 29,
@@ -272,7 +308,8 @@
       "image": "../assets/lap images/lenovo gforce.jpg",
       "model": "Lenovo GForce",
       "price": "75,000",
-      "originalPrice": "83,000"
+      "originalPrice": "83,000",
+      "ratings": 4
     },
     {
       "id": 30,
@@ -280,7 +317,8 @@
       "image": "../assets/lap images/macbook pro 3.jpg",
       "model": "Macbook Pro 3",
       "price": "1,02,599",
-      "originalPrice": "1.10,000"
+      "originalPrice": "1.10,000",
+      "ratings": 4
     }
   ],
   "cart": [
@@ -294,22 +332,22 @@
       "id": 1
     },
     {
-      "productId": 6,
+      "productId": 3,
       "userId": "1",
-      "image": "../assets/lap images/dell inspiron 15.jpg",
-      "name": "Dell Inspiron 15",
-      "price": "63,599",
+      "image": "../assets/lap images/asus zen1.jpg",
+      "name": "Asus VivoBook ultra k14",
+      "price": "59,000",
       "quantity": 1,
-      "id": 4
+      "id": 2
     },
     {
-      "productId": 4,
+      "productId": 1,
       "userId": "1",
-      "image": "../assets/lap images/lenovo ideapad flex.jpg",
-      "name": "Lenovo IdeaPad Flex 5i",
-      "price": "67,000",
+      "image": "../assets/lap images/Dell inspiron 3511.jpg",
+      "name": "Dell inspiron 15 3511",
+      "price": "53,000",
       "quantity": 1,
-      "id": 5
+      "id": 3
     }
   ]
 }

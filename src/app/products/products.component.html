@@ -22,15 +22,24 @@
 </div>
   <div *ngIf="!productNotFound" class="product-container" id="product-container">
     <div class="box" data-item="dell" *ngFor="let product of filteredProducts" >
-        <a [routerLink]="['/products',product.model]">
+        <a routerLink="description/{{product.model}}">
         <div class=productid data-productid="1">
             <div class="title">{{product.category}}</div>
             <div class="image">
                 <img [src]="product.image" class="lap-img" width="330" height="200">
             </div>
             <div class="text">
+                <div class="star-ratings">
+                    <span *ngFor="let i of [1, 2, 3, 4, 5]">
+                      <i class="fa fa-star" [ngClass]="{'checked': i <= product.ratings}"></i>
+                    </span>
+                  </div>
                 <div class="lap-model">{{product.model}}<br></div>
-                <div class="lap-price">&#8377; {{product.price}}</div>
+                <div class="lap-price">
+                    <span class="offer-price">&#8377; {{product.price}}</span>
+                    <span class="sale-price">&#8377; {{product.originalPrice}}</span>
+                </div>
+                 
             </div>
         </div>
     </a>

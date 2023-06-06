@@ -13,6 +13,12 @@ import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { CanActivateCheckoutGuard } from './can-activate-checkout.guard';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
+import { AdminNavbarComponent } from './admin/adminNavbar/adminNavbar.component';
+import { AdminDashboardComponent } from './admin/adminDashboard/adminDashboard.component';
+import { UsersComponent } from './admin/users/users.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
+import { AuthAdminGuard } from './admin/auth-admin.guard';
+import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   { path:'', 
     component:HomeComponent
@@ -26,8 +32,10 @@ const routes: Routes = [
     component:ProductsComponent
   },
   {
-    path:'products/:viewDetails',
-    component:ProductDetailsComponent
+    path:'products',
+    children: [
+      {path: 'description/:viewDetails', component:ProductDetailsComponent}
+    ]
   },
   {
     path:'cart',
@@ -61,6 +69,19 @@ const routes: Routes = [
   {
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'admin',
+    canActivate: [AuthAdminGuard],
+    component:AdminDashboardComponent
+  },
+  {
+    path:'admin',
+    canActivate:[AuthAdminGuard], children: [
+      { path:'dashboard', component:AdminDashboardComponent },
+      { path:'users', component:UsersComponent },
+      { path:'add-products', component:AddProductsComponent },
+    ]
   },
   {
     path:'**',

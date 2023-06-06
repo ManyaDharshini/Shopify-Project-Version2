@@ -19,6 +19,11 @@ import { ProductDetailsComponent } from './productDetails/productDetails.compone
 import { FooterComponent } from './footer/footer.component';
 import { ForgotPasswordComponent } from './login/forgotPassword/forgotPassword.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminDashboardComponent } from './admin/adminDashboard/adminDashboard.component';
+import { AdminNavbarComponent } from './admin/adminNavbar/adminNavbar.component';
+import { UsersComponent } from './admin/users/users.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
 @NgModule({
   declarations: [	
     AppComponent,
@@ -35,7 +40,12 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
       ProductDetailsComponent,
       FooterComponent,
       ForgotPasswordComponent,
-      PageNotFoundComponent
+      PageNotFoundComponent,
+      AdminComponent,
+      AdminDashboardComponent,
+      AdminNavbarComponent,
+      UsersComponent,
+      AddProductsComponent
    ],
   imports: [
     BrowserModule,

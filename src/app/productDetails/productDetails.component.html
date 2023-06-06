@@ -39,12 +39,10 @@
           </div> -->
         </div>
         <div class="product-rating">
-            <span><i class="fa-solid fa-star"></i></span>
-            <span><i class="fa-solid fa-star"></i></span>
-            <span><i class="fa-solid fa-star"></i></span>
-            <span><i class="fa-solid fa-star"></i></span>
-            <span><i class="fa-solid fa-star"></i></span>
-            <span class="review">(47 Review)</span>
+            <span *ngFor="let i of [1, 2, 3, 4, 5]">
+              <i class="fa fa-star" [ngClass]="{'checked': i <= finalProduct.ratings}"></i>
+            </span>
+            <span class="review">(47 Reviews)</span>
         </div>
         <div class="product-price">
             <span class="offer-price">&#8377; {{finalProduct.price}}</span>
