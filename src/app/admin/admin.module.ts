@@ -9,6 +9,10 @@ import { AdminDashboardComponent } from './adminDashboard/adminDashboard.compone
 import { AdminNavbarComponent } from './adminNavbar/adminNavbar.component';
 import { UsersComponent } from './users/users.component';
 import { AddProductsComponent } from './add-products/add-products.component';
+import { AddOffersComponent } from './add-offers/add-offers.component';
+import { AdminProductsComponent } from './adminProducts/adminProducts.component';
+import { EditProductComponent } from './editProduct/editProduct.component';
+import { ManageOrdersComponent } from './manage-orders/manage-orders.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { AddProductsComponent } from './add-products/add-products.component';
     AdminDashboardComponent,
     AdminNavbarComponent,
     UsersComponent,
-    AddProductsComponent
+    AddProductsComponent,
+    AddOffersComponent,
+    AdminProductsComponent,
+    EditProductComponent,
+    ManageOrdersComponent
   ]
 })
 export class AdminModule { }

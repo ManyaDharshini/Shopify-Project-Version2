@@ -20,6 +20,17 @@
       </select>
     </div>
 </div>
+
+<div *ngIf="offerStatus" class="offerStatus">
+    <marquee behavior="scroll" direction="left">
+<div class="flex-text">
+    <p class="dancing-text">Offer is live now</p>
+    <p class="dancing-text">Offer is live now</p>
+    <p class="dancing-text">Offer is live now</p>
+</div>
+</marquee>
+  </div>
+
   <div *ngIf="!productNotFound" class="product-container" id="product-container">
     <div class="box" data-item="dell" *ngFor="let product of filteredProducts" >
         <a routerLink="description/{{product.model}}">

@@ -18,7 +18,7 @@ export class AddProductsComponent implements OnInit {
 
   ngOnInit() {
     this.productForm = this.formBuilder.group({
-      category: ['', Validators.required],
+      category: ['', Validators.required,Validators.pattern("^[A-Za-z][A-zaZ\\s]{2,20}$")],
       image: ['', Validators.required],
       model: ['', Validators.required],
       price: ['', Validators.required],
@@ -29,13 +29,20 @@ export class AddProductsComponent implements OnInit {
   
   onSubmit() {
    
+    if(this.productForm.valid){
     const product: Product = this.productForm.value;
-  this.productService.addProduct(product).subscribe(() => {
+    this.productService.addProduct(product).subscribe(() => {
     console.log(product);
     alert("Product added successfully");
     this.productForm.reset();
     // Product added successfully
-  });
+    });
+   }
+    else {
+      this.productForm.markAllAsTouched();
+    }
   }
-
+  
 }
+
+

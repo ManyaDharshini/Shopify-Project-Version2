@@ -13,12 +13,12 @@ export class CartComponent {
   cartItems: any[] = [];
   totalPrice:number = 0;
   cartCount:number = 0;
+  subtotal = 0;
   currentUserId =this.authUser.setUserId();
   userId =  parseInt(this.currentUserId, 10);
   constructor(private cartService: CartService, public authUser: AuthUserService) {
     setInterval(()=>{
           this.getCartTotal();
-
     },1000);
   }
 
@@ -61,15 +61,25 @@ export class CartComponent {
      const priceNumber = parseFloat(price.replaceAll(',', ''));
      const quantity= item.quantity;
      const quantityNumber = parseInt(quantity);
+     this.subtotal = priceNumber * quantityNumber
      return priceNumber * quantityNumber;
+  }
+
+  passsubtotal(){
+    this.cartService.getSubtotal(this.subtotal);
   }
 
   getCartTotal(){
     this.cartService.getCartItems().subscribe(items => {
       this.cartItems = items;
       this.totalPrice = this.cartItems.reduce((acc,item)=> acc + parseFloat(item.price.replaceAll(',','')) * parseInt(item.quantity),0);
+      this.passCartTotal();
       //console.log(this.totalPrice);
     });
+  }
+
+  passCartTotal(){
+    this.cartService.getcartTotal(this.totalPrice);
   }
 
   clearCart() {
@@ -84,6 +94,7 @@ export class CartComponent {
     });
  
   }
+  
 
 
 }

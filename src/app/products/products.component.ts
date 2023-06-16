@@ -5,6 +5,7 @@ import { Product } from './product';
 import { Observable } from 'rxjs';
 import { AuthUserService } from '../login/authUser.service';
 import { Router } from '@angular/router';
+import { AdminService } from '../admin/admin.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -17,13 +18,16 @@ export class ProductsComponent{
   selectedCategory: string = '';
   searchTerm: string = '';
   productNotFound=false;
+  offerStatus = false;
   constructor(private service:ProductsService,private cartService:CartService,
-    private authUser:AuthUserService,private route:Router) {
+    private authUser:AuthUserService,private route:Router,private adminService:AdminService) {
     this.service.getProducts().subscribe(data=>{
       this.products=data;
       this.filteredProducts = data;
-    })
+    });
+    this.offerStatus = localStorage.getItem('offerStatus') === 'true';
    }
+  
 
    filterProducts() {
     if (this.selectedCategory === '' && this.searchTerm === '') {

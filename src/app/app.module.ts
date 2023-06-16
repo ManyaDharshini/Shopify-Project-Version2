@@ -24,8 +24,14 @@ import { AdminDashboardComponent } from './admin/adminDashboard/adminDashboard.c
 import { AdminNavbarComponent } from './admin/adminNavbar/adminNavbar.component';
 import { UsersComponent } from './admin/users/users.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
+import { AddOffersComponent } from './admin/add-offers/add-offers.component';
+import { AdminProductsComponent } from './admin/adminProducts/adminProducts.component';
+import { EditProductComponent } from './admin/editProduct/editProduct.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ManageOrdersComponent } from './admin/manage-orders/manage-orders.component';
+
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       AboutComponent,
       ContactComponent,
@@ -45,7 +51,12 @@ import { AddProductsComponent } from './admin/add-products/add-products.componen
       AdminDashboardComponent,
       AdminNavbarComponent,
       UsersComponent,
-      AddProductsComponent
+      AddProductsComponent,
+      AddOffersComponent,
+      AdminProductsComponent,
+      EditProductComponent,
+      OrdersComponent,
+      ManageOrdersComponent
    ],
   imports: [
     BrowserModule,

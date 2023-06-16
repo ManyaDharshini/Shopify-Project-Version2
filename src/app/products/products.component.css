@@ -63,6 +63,43 @@
     background-color: #181e27;
     color: #fff;
 }
+.offerStatus{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+marquee{
+    width:1000px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.flex-text{
+    display: flex;
+    gap:50px;
+}
+
+.dancing-text {
+    position: relative;
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+    color:#581845;
+    font-size:30px;
+  }
+  
+  /* @keyframes dance {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */
+
 .product-container{
     margin:5rem;
     justify-items: center; 

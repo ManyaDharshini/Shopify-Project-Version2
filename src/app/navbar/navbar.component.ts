@@ -9,7 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  cartCount:number;
+  cartCount:number = 0;
   constructor(public authUser:AuthUserService,private route:Router,private el:ElementRef,private cartService:CartService) {
     setInterval(()=>{
       this.cartService.getCartItems().subscribe(cartItems=>{

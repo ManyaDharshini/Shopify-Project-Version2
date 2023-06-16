@@ -27,6 +27,9 @@ setUserId(){
 onLogin():void {
   this.isLoggedIn = true;
   localStorage.setItem('isLoggedIn','true');
+  localStorage.setItem('isCheckout','true');
+
+
 }
 
 onlogout():void {
@@ -34,6 +37,8 @@ onlogout():void {
   if(confirmation){
   this.isLoggedIn = false;
   localStorage.setItem('isLoggedIn','false');
+  localStorage.setItem('isCheckout','false');
+
   localStorage.removeItem(this.userId);
   }
 }

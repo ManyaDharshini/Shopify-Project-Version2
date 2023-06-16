@@ -5,5 +5,6 @@ export interface Product {
     price: any;
     originalPrice:any;
     ratings:any;
+    id:any;
   }
   

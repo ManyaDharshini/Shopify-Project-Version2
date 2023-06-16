@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
   user:any;
   constructor(private route:Router,private userData:UserDataService,private authUser:AuthUserService,private cartService:CartService) { }
   loginForm=new FormGroup({
-    emailId:new FormControl('',[Validators.required,Validators.pattern("^([a-zA-Z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$")]),
+    emailId:new FormControl('',[Validators.required,Validators.pattern("^[a-zA-Z0-9]+[._]{0,1}[0-9a-zA-Z]{3,}@([a-z]+).([a-z]{2,8})(.[a-z]{2,8})$")]),
+                                                                      //"^(?![0-9]+$)[a-zA-Z0-9_]{3,}@([a-zA-Z]+).([a-z]{2,8})(.[a-z]{2,8})$"
     password:new FormControl('',[Validators.required,Validators.minLength(6)])
   })
 

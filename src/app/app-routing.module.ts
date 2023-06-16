@@ -19,6 +19,11 @@ import { UsersComponent } from './admin/users/users.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
 import { AuthAdminGuard } from './admin/auth-admin.guard';
 import { AdminComponent } from './admin/admin.component';
+import { AddOffersComponent } from './admin/add-offers/add-offers.component';
+import { AdminProductsComponent } from './admin/adminProducts/adminProducts.component';
+import { EditProductComponent } from './admin/editProduct/editProduct.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ManageOrdersComponent } from './admin/manage-orders/manage-orders.component';
 const routes: Routes = [
   { path:'', 
     component:HomeComponent
@@ -40,6 +45,10 @@ const routes: Routes = [
   {
     path:'cart',
     component:CartComponent
+  },
+  {
+    path:'my-orders',
+    component:OrdersComponent
   },
   {
     path:'checkout',
@@ -80,7 +89,11 @@ const routes: Routes = [
     canActivate:[AuthAdminGuard], children: [
       { path:'dashboard', component:AdminDashboardComponent },
       { path:'users', component:UsersComponent },
+      { path:'products', component: AdminProductsComponent},
+      { path: 'edit-product/:id', component: EditProductComponent },
       { path:'add-products', component:AddProductsComponent },
+      { path:'add-offers', component:AddOffersComponent},
+      { path:'manage-orders', component:ManageOrdersComponent}
     ]
   },
   {

@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
   })
   signUpForm=this.fb.group({
     username:[,[Validators.required,Validators.pattern("^[A-Za-z][A-zaZ\\s]{2,20}$")]],
-    emailId:[,[Validators.required,Validators.pattern("^([a-zA-Z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$")]],
+    emailId:[,[Validators.required,Validators.pattern("^[a-zA-Z0-9]+[._]{0,1}[0-9a-zA-Z]{3,}@([a-z]+).([a-z]{2,8})(.[a-z]{2,8})$")]],
     mobile:[,[Validators.required,Validators.pattern("^[6-9]{1}[0-9]{9}$")]],
     password:[,[Validators.required,Validators.minLength(6)]],
     confirmPassword:[,[Validators.required],],
